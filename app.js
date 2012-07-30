@@ -11,12 +11,13 @@ io.sockets.on('connection', function (socket) {
   socket.on('msg', function () {
     socket.get('nickname', function (err, name) {
       console.log('Chat message by ', name);
+      socket.broadcast.emit('join', socket.nickname);
     });
   });
 
   socket.on('putChar', function(data) {
     console.log('character data received from ' + socket.nickname + ': ' + data);
-    socket.broadcast.emit('putChar', socket.nickname, data)
+    socket.broadcast.emit('putChar', socket.nickname, data);
   })
 });
 
