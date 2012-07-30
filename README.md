@@ -1,4 +1,14 @@
-js-textmode-server
-==================
+BUILDING THE PROJECT
+====================
 
-A server that listens for communication between instances of js-textmode-editor
+### Prerequisites
+
+ * node.js
+   * socket.io
+
+
+
+Run the built-in server
+--------------------
+
+    node app.js
