@@ -4,6 +4,7 @@
 	"version": "0.0.1",
 	"dependencies": {
 		"express": "3.0.0rc1",
-		"socket.io": "0.9.9"
+		"socket.io": "0.9.9",
+		"coffee-script", "1.3.3"
 	}
 }

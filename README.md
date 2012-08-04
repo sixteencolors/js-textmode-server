@@ -5,10 +5,11 @@ BUILDING THE PROJECT
 
  * node.js
    * socket.io
+   * coffeescript
 
-
+cake build
 
 Run the built-in server
 --------------------
 
-    node app.js
+    cake --run build
